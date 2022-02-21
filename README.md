@@ -1,4 +1,4 @@
-# mosaic
+# Mosaic
 Algorithm which creates a photo mosaic from colleciton of images
 
 This algorithm does the following:
