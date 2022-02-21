@@ -1,5 +1,5 @@
 # Mosaic
-Algorithm which creates a photo mosaic from colleciton of images
+Algorithm which creates a photo mosaic from collection of images
 
 This algorithm does the following:
  - if active == false : go through all photos in /data/images, calc their average color and saves all of this info into a json file in /out.
