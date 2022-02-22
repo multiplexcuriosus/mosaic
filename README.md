@@ -1,5 +1,5 @@
 # Mosaic
-Algorithm which creates a photo mosaic from a collection of images
+Algorithm which creates a photo mosaic from a collection of images - In-depth description on http://multiplexcuriosus.org/mosaic.html
 
 ## How to use this code
 
@@ -20,15 +20,13 @@ numCores <- number of available cores (often == 8)
 
 n <- number of pixels per picture side
 
-There are also some things you need to do in preparation.
-
 Due to my laziness I will assume you saved Mosaic.pde into a directory on your desktop called Mosaic. Replace <username> with your username.
  
-#### Preparation (Case I)
+### Case I
 
 Filesystem related
  
-(1) In the directory with the sketch, create a directory called data
+(1) In the directory with the sketch create a directory called data and one called out
  
 (2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
 
@@ -37,15 +35,20 @@ Algorithm related
 (3) active <- false, repeat <- false, subset <- false 
               
 (4) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+
+(5) Run code
+ 
+(6) Now the JSON file described in (4) was created and in out you will find pixelized version of the images in data/images
+                                                
+(7) subTar <- name of the target image, whose name you find in out
+ 
+(8) active <- true
+              
+(9) Run code
+              
+(10) You will find your photo mosaic under out/mosaiked
  
 
-
-This algorithm does the following:
- - if active == false : go through all photos in /data/images, calc their average color and saves all of this info into a json file in /out. It also saves a pixilated version into /out
- - if active == true : go through all pixels of a target photo and decide which, photo from the collected in /images has the best matching average color.
- Then Draw all newly determined pixels at their right location such that a photo mosaic is created
- 
- In-depth description on http://multiplexcuriosus.org/mosaic.html
  
  
 
