@@ -81,13 +81,13 @@ void setup() {
   background(0);
 
   //get image files
-  path1 = new File("C:/Users/Jau/Desktop/Mosaic/data/images");
+  path1 = new File("C:/Users/username/Desktop/Mosaic/data/images");
   files1 = path1.listFiles();
-  path2 = new File("C:/Users/Jau/Desktop/Mosaic/out/n_"+n);
+  path2 = new File("C:/Users/username/Desktop/Mosaic/out/n_"+n);
   files2 = path2.listFiles();
-  path3 = new File("C:/Users/Jau/Desktop/Mosaic/data/favs");
+  path3 = new File("C:/Users/username/Desktop/Mosaic/data/subset");
   files3 = path3.listFiles();
-  path4 = new File("C:/Users/Jau/Desktop/Mosaic/out/subset/n_"+n);
+  path4 = new File("C:/Users/username/Desktop/Mosaic/out/subset/n_"+n);
   files4 = path4.listFiles();
 
   //init data structures
