@@ -102,7 +102,9 @@ To use rectify.pde you need to do the following:
 
 (3) Fill the directory data with all the images you want to later input into the mosaic sketch
 
-(4) If you run the Rectifier sketch now it will perform the actions a),b) and c) which I described above for all the images in /data
+(4) Replace username with you username
+
+(5) If you run the Rectifier sketch now it will perform the actions a),b) and c) which I described above for all the images in /data
 
 Using these "rectified" images for the mosaic sketch will result in mosaics in which the individual images will be better recognizable
  
