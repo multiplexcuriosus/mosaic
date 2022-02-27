@@ -62,13 +62,11 @@ boolean update = false; //replace json object with new containing pixel data. On
 //#######################################
 boolean threadApproxDones[]; //keeps track of which approximateThreads are done
 boolean run = true;
-//these "global" indeces
 int globaldrawIndex = 0;
 int mosaikIndex = 0;
 
 String subTar = "x_y_z"; //name of pixelised target image in data/out
 String target = "out/n_"+n+"/"+subTar+".jpg"; //if !repeat this image will be approximated
-//String target = "out/n_50_rect/"+subTar+".jpg";
 
 void setup() {
 
