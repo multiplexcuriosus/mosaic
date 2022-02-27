@@ -11,23 +11,21 @@ There are the following use cases:
 
 #### III For every image in a set of images create a photo mosaic consisting of all images from a different set of images
 
+Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic. 
 
-For all of these cases the following things need to be done to adapt the code to your needs:
 
-#### Customizing
+For all three cases you need to do the following:
 
-numCores <- number of available cores (often == 8)
-
-n <- number of pixels per picture side
-
-Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic. Replace <username> with your username.
- 
-Also, for all use cases, the following two steps need to be done:
- 
 (1) In the directory with the sketch create a directory called data and one called out
  
 (2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
  
+(3) Replace <username> with your username.
+
+(4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side
+
+Now come the case specific instructions
+
 ### Case I
 
 (1) active <- false, repeat <- false, subset <- false 
