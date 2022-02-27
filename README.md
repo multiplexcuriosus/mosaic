@@ -22,82 +22,68 @@ n <- number of pixels per picture side
 
 Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic. Replace <username> with your username.
  
-### Case I
-
-Filesystem related
+Also, for all use cases, the following two steps need to be done:
  
 (1) In the directory with the sketch create a directory called data and one called out
  
 (2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
-
-Algorithm related
  
-(3) active <- false, repeat <- false, subset <- false 
+### Case I
+
+(1) active <- false, repeat <- false, subset <- false 
               
-(4) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+(2) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
 
-(5) Run code
+(3) Run code
  
-(6) Now the JSON file described in (4) was created and in data/out you will find pixelized version of the images in data/images
+(4) Now the JSON file described in (4) was created and in out you will find pixelized version of the images in data/images
                                                 
-(7) subTar <- name of the target image, whose name you find in out
+(5) subTar <- name of the target image, whose name you find in out
  
-(8) active <- true
+(6) active <- true
               
-(9) Run code
+(7) Run code
               
-(10) You will find your photo mosaic under out/mosaiked
+(8) You will find your photo mosaic under out/mosaiked
               
               
 ### Case II
-
-Filesystem related
  
-(1) In the directory with the sketch create a directory called data and one called out
- 
-(2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
-
-Algorithm related
- 
-(3) active <- false, repeat <- **true**, subset <- false 
+(1) active <- false, repeat <- **true**, subset <- false 
               
-(4) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+(2) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
 
-(5) Run code
+(3) Run code
  
-(6) Now the JSON file described in (4) was created and in data/out  you will find pixelized version of the images in data/images
+(4) Now the JSON file described in (4) was created and in out  you will find pixelized version of the images in data/images
  
-(7) active <- true
+(5) active <- true
               
-(8) Run code
+(6) Run code
               
-(9) You will find your photo mosaics under out/mosaiked
+(7) You will find your photo mosaics under out/mosaiked
               
 ### Case III
 
 Filesystem related
  
 (1) In the directory with the sketch create a directory called data and one called out
- 
-(2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
-
-(3) In data create a directory called subset. Fill the directory data/subset with the target images (the images of which you want a mosaic of)
 
 Algorithm related
  
-(4) active <- false, repeat <- **true**, subset <- **tru** 
+(2) active <- false, repeat <- **true**, subset <- **tru** 
               
-(4) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+(3) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
 
-(5) Run code
+(4) Run code
  
-(6) Now the JSON file described in (4) was created and in data/out you will find pixelized version of the images in data/images
+(5) Now the JSON file described in (4) was created and in out you will find pixelized version of the images in data/images
  
-(7) active <- true
+(6) active <- true
               
-(8) Run code
+(7) Run code
               
-(9) You will find your photo mosaics under out/subset/mosaiked
+(8) You will find your photo mosaics under out/subset/mosaiked
  
 
  
