@@ -20,7 +20,7 @@ For all three cases you need to do the following:
  
 (2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
  
-(3) Replace <username> with your username.
+(3) Replace "<username>" with your username.
 
 (4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side
 
