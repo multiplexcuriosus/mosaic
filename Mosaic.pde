@@ -1,10 +1,11 @@
-/*
-this code does the following:
- - if active == false : go through all photos in /data/images,
- calc their average color and saves all of this info into a json file in /out.
+/* WRITTEN BY JAÚ GRETLER (jau.gretler@gmail.com) around 1.1.2022
+
+For detailled instructions please read the Readme on GitHub https://github.com/multiplexcuriosus/mosaic
+
+Short description of what this code does:
+ - If active == false : go through all photos in /data/images, calc their average color and saves all of this info into a json file in /out.
  It also saves a pixilated version into /out
- - if active == true : go through all pixels of a target photo and decide which
- photo from the collected in /images has the best matching average color.
+ - If active == true : go through all pixels of a target photo and decide which photo from the collected in /images has the best matching average color.
  Then Draw all newly determined pixels at their right location such that a photo mosaic is created
  
  */
@@ -38,9 +39,6 @@ boolean preLoadDone = false;
 boolean fancy = false; //when set to true certain threads dont go to work thereby leaving their sector blank
 boolean preloadDone = false;
 
-//debugging
-ArrayList<PVector> circles;
-
 //file system handling
 File path1; //path to set of unaltered source imgs
 File path2; //path to pixelised version of path1 pictures
@@ -68,12 +66,9 @@ boolean run = true;
 int globaldrawIndex = 0;
 int mosaikIndex = 0;
 
-String subTar = "72_53_46"; //name of pixelised target image in data/out
+String subTar = "x_y_z"; //name of pixelised target image in data/out
 String target = "out/n_"+n+"/"+subTar+".jpg"; //if !repeat this image will be approximated
 //String target = "out/n_50_rect/"+subTar+".jpg";
-int gen = 0;
-
-
 
 void setup() {
 
@@ -110,7 +105,6 @@ void setup() {
   if (active) {
     if (repeat) pixImgsNams = loadImgNames(); // load names of pixelised images
     vals = loadJSONArray("out/colors.json"); // load json file
-    //println("vals size: "+vals.size());
     preload(); //only for active mode //load all images into a hashmap
     dac(); //determines chunks and instantiates threads (divide and conquer)
   } else {
@@ -120,7 +114,6 @@ void setup() {
     vals = new JSONArray();
     prepare(vals, colData, imgs); //pixelize all images and save their average colors into the vals json file
   }
-
   println("setup done");
 }
 
@@ -192,29 +185,25 @@ void dac() {
 
       if (cx == 3) {
         endX+=stepsX;
-        //println("corrected x");
       }
       //println(y);
       if (cy == 1) {
         endY+=stepsY;
-        //println("corrected y");
       }
 
       //disp
       noFill();
       strokeWeight(3);
       stroke(255, 0, 0);
-      //rect(beginX, beginY, endX, endY);
 
       int[] temp = {beginX, beginY, endX, endY};
-      //println("chunk: "+ beginX+"," +beginY+","+ (beginX+endX)+","+ (beginY+endY));
       threadData.add(temp);
       cy++;
     }
     cy = 0;
     cx++;
   }
-  //println("threadIndex: " + threadIndex);
+
   //fill as many pixels as possible with matching images
   threadIndex = 0;
   delay(100);
@@ -243,7 +232,6 @@ void mosaic_threaded() {
   final double tic = millis();
   println("mosaic thread " + myIndex + " started");
   int localIndex = 0;
-  //println("myIndex: " + myIndex + ", threadData.size: " + threadData.size());
 
   //fill as many pixels as possible with matching images
   int[] data = threadData.get(myIndex);
@@ -262,7 +250,6 @@ void mosaic_threaded() {
   for (int x = x0; x<xLimit; x+=stepsX) {
     for (int y = y0; y<yLimit; y+=stepsY) {
       color col = img.get(x+stepsX/2, y+stepsY/2);
-      //circles.add(new PVector(x+stepsX/2, y+stepsY/2));
       PVector req = new PVector(red(col), green(col), blue(col));
       double max = 10000;
       String winner = "failed";
