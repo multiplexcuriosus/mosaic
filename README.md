@@ -20,7 +20,7 @@ For all three cases you need to do the following:
  
 (2) In data, create a directory called images. Fill the directory data/images with the images you want the mosaic to consist of
  
-(3) Replace "<username>" with your username.
+(3) Replace 'username' with your username.
 
 (4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side
 
@@ -84,6 +84,29 @@ Algorithm related
 (8) You will find your photo mosaics under out/subset/mosaiked
  
 
+ 
+### Rectifier
+Now you might realise that the images got all squeezed into a rectangular shape no matter what their original dimension was. To overcome this problem I have written a processing sketch which takes iterates over all images in a directory and 
+ 
+a) rotates them 90 degrees clockwise if they are vertical (height > width) 
+ 
+b) positions them centered into a new image, keeping its original dimension
+ 
+c) fills the leftover space with the average color of the image
+
+To use rectify.pde you need to do the following:
+
+(1) Create a directory on your desktop called Rectifier and move the Rectifier.pde file in there
+
+(2) Inside the directory Rectifier, create a directory called data and one called out
+
+(3) Fill the directory data with all the images you want to later input into the mosaic sketch
+
+(4) If you run the Rectifier sketch now it will perform the actions a),b) and c) which I described above for all the images in /data
+
+Using these "rectified" images for the mosaic sketch will result in mosaics in which the individual images will be better recognizable
+ 
+ 
  
  
 
