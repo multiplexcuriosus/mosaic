@@ -21,7 +21,7 @@ For all three cases you need to do the following:
  
 (3) Replace 'username' with your username.
 
-(4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side
+(4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side (I highly suggest a multiple of 8 between 40 and 80)
 
 Now come the case specific instructions
 
