@@ -144,6 +144,7 @@ void approximate() {
     }
   } else {
     String save = subset ? "out/subset/mosaiked/n_"+n+"/n"+n+"_"+mosaikIndex : "out/mosaiked/n"+n+"_"+subTar;
+    if(repeat && active && !subset) save = "out/mosaiked/n"+n+"_"+mosaikIndex;
     println(mosaikIndex + " st run done");
     saveFrame(save);
 
