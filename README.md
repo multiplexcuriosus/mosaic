@@ -29,13 +29,19 @@ Now come the case specific instructions
 
 IMPORTANT:
 
-If you are in case II or III, the console will display a bunch of error messages once all images are mosaikized. This does not need to concern you.
+- If you are in case II or III, the console will display a bunch of error messages once all images are mosaikized. This does not need to concern you.
+
+- If you can't find the generated mosaics or/and are confused by how many folders and files there are; delete the out folder and start the case-specific instructions again.
+
+- In case you aren't familiar with processing: to close the sketch window you must press the stop-button in the IDE.
+
+- The program will indicate that a certain step is done by printing to the console. If you have hundreds of images certain steps may take up to a minute or two.
 
 ### Case I
 
 (1) active <- false, repeat <- false, subset <- false 
               
-(2) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+(2) Once you have added all the images to the collection in data/images, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
 
 (3) Run code
  
@@ -78,11 +84,11 @@ Algorithm related
 
 (3) Run code
 
-(4) active <- false, repeat <- true, subset <- **false**, update <- **true**
+(4) subset <- **false**, update <- **true**
 
 (5) Run code
 
-(6) active <- **true**, repeat <- true, subset <- **true**, update <- **false**
+(6) active <- **true**, subset <- **true**, update <- **false**
               
 (7) Run code
                      
