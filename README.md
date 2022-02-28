@@ -113,7 +113,7 @@ To use rectify.pde you need to do the following:
 
 (3) Fill the directory data with all the images you want to later input into the mosaic sketch
 
-(4) Replace username with you username
+(4) Replace 'username' with your username
 
 (5) If you run the Rectifier sketch now it will perform the actions a),b) and c) which I described above for all the images in /data
 
