@@ -99,11 +99,11 @@ Algorithm related
 ### Rectifier
 Now you might realise that the images got all squeezed into a rectangular shape no matter what their original dimension was. To overcome this problem I have written a processing sketch which takes iterates over all images in a directory and 
  
-a) rotates them 90 degrees clockwise if they are vertical (height > width) 
+a) Rotates them 90 degrees clockwise if they are vertical (height > width) 
  
-b) positions them centered into a new image, keeping its original dimension
+b) Positions them centered into a new image, keeping its original dimension
  
-c) fills the leftover space with the average color of the image
+c) Fills the leftover space with the average color of the image
 
 To use rectify.pde you need to do the following:
 
