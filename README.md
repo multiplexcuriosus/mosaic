@@ -11,7 +11,7 @@ There are the following use cases:
 
 #### III For every image in a set of images create a photo mosaic consisting of all images from a different set of images
 
-Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic. 
+Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic (Mind the upper case M).
 
 For all three cases you need to do the following:
 
@@ -77,11 +77,11 @@ Algorithm related
 
 (3) Run code
 
-(4) active <- false, repeat <- **true**, subset <- **false**, update <- **true**
+(4) active <- false, repeat <- true, subset <- **false**, update <- **true**
 
 (5) Run code
 
-(6) active <- **true**, repeat <- **true**, subset <- **true**, update <- **false**
+(6) active <- **true**, repeat <- true, subset <- **true**, update <- **false**
               
 (7) Run code
                      
