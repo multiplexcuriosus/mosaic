@@ -3,6 +3,7 @@ Algorithm which creates a photo mosaic from a collection of images - In-depth de
 
 ## How to use this code
 
+The code Mosaic.pde and Rectifier.pde need to be run with in the Processing IDE (https://processing.org). 
 There are the following use cases:
 
 #### I Create a single photo mosaic from an image collection
