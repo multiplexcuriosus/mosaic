@@ -53,10 +53,9 @@ File [] files4;
 //#######################################
 //#######################################
 //active == true: mosaic is created
-//active == false: images in data/images get pixelised and analized, average col is saved to json file
+//active == false: images in data/images get pixelised and analysed, average col is saved to json file
 boolean active = false;
 boolean repeat = false ; //true: mosaikize all images in images folder. might stop aprubtly, there is a bug lurking around somewhere
-//#######################################
 boolean subset = false; //false: use images from path2. true: use images from path3
 boolean update = true; //replace json object with new containing pixel data. Only makes sense if new pictures are added to image pool
 //#######################################
