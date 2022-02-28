@@ -379,7 +379,7 @@ ArrayList<PImage> loadImgs() {
 
 //POST: res contains all names of the image files in data/images
 ArrayList<String> loadImgNames() {
-  File[] files = subset ? files4 : files1;
+  File[] files = subset ? files4 : files2;
   ArrayList<String>res = new ArrayList<String>();
   for (int i = 0; i < files.length; i++) {
     String name = subset ? "out/subset/n_"+n+"/" + files[i].getName() : "out/n_"+n+"/" + files[i].getName();
