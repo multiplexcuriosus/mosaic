@@ -13,7 +13,6 @@ There are the following use cases:
 
 Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic. 
 
-
 For all three cases you need to do the following:
 
 (1) In the directory with the sketch create a directory called data and one called out
@@ -25,6 +24,11 @@ For all three cases you need to do the following:
 (4) numCores <- number of available cores (often == 8), n <- number of pixels per picture side
 
 Now come the case specific instructions
+
+
+IMPORTANT:
+
+If you are in case II or III, the console will display a bunch of error messages once all images are mosaikized. This does not need to concern you.
 
 ### Case I
 
