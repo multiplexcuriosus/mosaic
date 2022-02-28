@@ -65,22 +65,22 @@ Now come the case specific instructions
 
 Filesystem related
  
-(1) In the directory with the sketch create a directory called data and one called out
+(1) In /data create a directory called subset. Fill data/subset with the target images.
 
 Algorithm related
  
-(2) active <- false, repeat <- **true**, subset <- **true** 
-              
-(3) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
+(2) active <- false, repeat <- **true**, subset <- **true**, update <- **false**
 
-(4) Run code
- 
-(5) Now the JSON file described in (4) was created and in out you will find pixelized version of the images in data/images
- 
-(6) active <- true
+(3) Run code
+
+(4) active <- false, repeat <- **true**, subset <- **false**, update <- **true**
+
+(5) Run code
+
+(6) active <- **true**, repeat <- **true**, subset <- **true**, update <- **false**
               
 (7) Run code
-              
+                     
 (8) You will find your photo mosaics under out/subset/mosaiked
  
 
