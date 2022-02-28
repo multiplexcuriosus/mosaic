@@ -69,7 +69,7 @@ Filesystem related
 
 Algorithm related
  
-(2) active <- false, repeat <- **true**, subset <- **tru** 
+(2) active <- false, repeat <- **true**, subset <- **true** 
               
 (3) Once you have added all the images to the collection in data/collection, set update to true. This will create a JSON file into which the RGB values from every image in data/images is saved. Once the code has been run with the boolean values from (3), you can set update to false, which will prevent this JSON file from being created. Whenever you add images to the image collection, you have to run the code once with the boolean values from (3) and update == true.
 
