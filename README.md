@@ -12,7 +12,7 @@ There are the following use cases:
 
 #### III For every image in a set of images create a photo mosaic consisting of all images from a different set of images
 
-Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic (Mind the upper case M).
+Due to my laziness I will assume you are working on windows and saved Mosaic.pde into a directory on your desktop called Mosaic (mind the upper case M).
 
 For all three cases you need to do the following:
 
