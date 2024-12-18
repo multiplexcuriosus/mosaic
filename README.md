@@ -1,4 +1,7 @@
 # Mosaic
+![id_n80](https://github.com/user-attachments/assets/3c91eb80-3a38-4ba3-b952-082bfea584cd)
+
+
 Algorithm which creates a photo mosaic from a collection of images - In-depth description on http://multiplexcuriosus.org/mosaic.html
 
 ## How to use this code
