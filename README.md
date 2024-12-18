@@ -1,5 +1,5 @@
 # Mosaic
-<img src="https://github.com/user-attachments/assets/98edc401-8ce3-45d6-b51e-9752bcbc6c93" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/98edc401-8ce3-45d6-b51e-9752bcbc6c93" width=100% height=50%>
 
 Algorithm which creates a photo mosaic from a collection of images - In-depth description on http://multiplexcuriosus.org/mosaic.html
 
